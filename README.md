@@ -61,7 +61,7 @@ This solution works, but involved using different libraries for installation of 
 
 	pip install pipenv
 	
-We can now use pipenv to install dependencies, and it will at the same time create a virtual environment for our project.  We won't be getting much into virtual environments, but take a look at this [article](https://opensource.com/article/18/2/why-python-devs-should-use-pipenv) for more information.
+We can now use pipenv to install dependencies, and it will at the same time create a virtual environment for our project.  We won't be getting much into virtual environments, but take a look at [this article](https://opensource.com/article/18/2/why-python-devs-should-use-pipenv) for more information.
 
 When we do want to add packages to our project, we can run
 
@@ -127,9 +127,16 @@ Arrays are:
 - not able to contain objects of different data types.
 - accessible by index number.
 
-There are several ways to declare arrays in Python.
+There are several ways to declare arrays in Python. One such way is this:
 
-Take a look at [this article](https://www.w3schools.com/python/python_ref_list.asp) for methods that we can use with Python.
+```python
+import array
+a = array.array('i', [1, 3, 4])
+```
+
+We import the module array, which has inside of it a method, also called array, that we use to create an array.  we use `'i'`, to declare that this array will hold integers.
+
+Take a look at [this article](https://www.w3schools.com/python/python_ref_list.asp) for methods that we can use with lists and arrays.
 
 #### Dictionaries
 
@@ -155,7 +162,7 @@ car={
 
 Quotes in dictionaries can be either single or double.  We can access or write to dictionaries using square brackets.  For example, if we wrote `car['make']`, we would see `"ford"`.  If we wrote `car['color']='blue'`, it would add the key:value pair "color":"blue" to our car dictionary.
 
-A good list of dictionary methods can be [viewed here](https://www.w3schools.com/python/python_dictionaries_methods.asp).
+A good list of dictionary methods can be viewed [here](https://www.w3schools.com/python/python_dictionaries_methods.asp).
 
 ### Indentation
 
