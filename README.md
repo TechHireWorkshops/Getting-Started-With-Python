@@ -1,6 +1,6 @@
 # Getting Started With Python
 
-Python is an easy-to-learn and temendously popular language.  It can be used for just about anything, and is especially well-suited for data science, machine learning, and data scraping. Python is also very in-demand in the job market, and learning Python can give you a leg up in your job search.
+Python is an easy-to-learn and tremendously popular language.  It can be used for just about anything, and is especially well-suited for data science, machine learning, and data scraping. Python is also very in-demand in the job market, and learning Python can give you a leg up in your job search.
 
 ## Installing Python
 
@@ -23,7 +23,7 @@ When we run commands in our terminal, our computer searches through  a list of d
 
 Pyenv intercepts commands using something called shims, determines which Python version has been specified by your application, and passes our commands along to the correct Python installation.
 
-To make sure that our computer uses these shims, instead of the default isntalled Python on our machines, we need to add some commands to our shell configuration files.
+To make sure that our computer uses these shims, instead of the default installed Python on our machines, we need to add some commands to our shell configuration files.
 
 If we're using bash, we can run this command:
 
@@ -53,9 +53,9 @@ Now, when we check out versions, we will see that 3.9.0 is our selected version.
 
 ### Pipenv
 
-Just as Python has different versions, so too do the dependencies and libraries that you can use in Python. Often these different verions have differences that can break applications if the wrong one is being used. This can become a problem when working with others on apps, or installing a Python project from elsewhere.
+Just as Python has different versions, so too do the dependencies and libraries that you can use in Python. Often these different versions have differences that can break applications if the wrong one is being used. This can become a problem when working with others on apps, or installing a Python project from elsewhere.
 
-Python comes with a package manager called pip, similart to Node's npm, or Ruby's bundler. By default, however, pip installs the most recent version of each dependency when run.  One way we used to address this issue, was by creating virtual environments for each Python project in which the app would run, with specified versions of each dependency (and the dependencies of those dependencies).
+Python comes with a package manager called pip, similar to Node's npm, or Ruby's bundler. By default, however, pip installs the most recent version of each dependency when run.  One way we used to address this issue, was by creating virtual environments for each Python project in which the app would run, with specified versions of each dependency (and the dependencies of those dependencies).
 
 This solution works, but involved using different libraries for installation of packages, and for creation and management of virtual environments.  To consolidate this, pipenv was created. To install pipenv, we run:
 
@@ -88,7 +88,7 @@ Variables in Python do not require a command, they are initialized as they are d
 	
 Variables can created for any data type in this way
 
-#### Lists, Sets, and Arrays
+#### Lists, Tuples, and Arrays
 
 Python has a few different data types for storing multiple data points.  The first of these are lists.
 
@@ -116,7 +116,7 @@ Tuples are declared thusly:
 
 	tuple = (1,2,3,4)
 	
-Note that even though tuples are declared using round brackets, we can access them by index using square crackets, like `tuple[index number]`.
+Note that even though tuples are declared using round brackets, we can access them by index using square brackets, like `tuple[index number]`.
 
 Arrays are a special data type in Python.  They need to be imported from the array library (more on importing later) before being used.  Arrays use less memory than lists of tuples
 
@@ -144,7 +144,7 @@ Dictionaries in Python are the analogue to JavaScripts's objects or Java's hashm
 
 Dictionaries are:
 
-- changable
+- changeable
 - unordered
 - not tolerant of duplicates
 - can contains any data types
